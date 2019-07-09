@@ -7,7 +7,7 @@
   updated_at_utc DATETIME NOT NULL,
   PRIMARY KEY(user_role_id),
   UNIQUE INDEX UQ_user_role_user_id_role_id(user_id, role_id),
-  INDEX IX_user_role_user_id(user_id), 
+  INDEX IX_user_role_user_id(user_id),
   INDEX IX_user_role_role_id(role_id),
   CONSTRAINT FK_user_role_user_id FOREIGN KEY(user_id) REFERENCES user(user_id),
   CONSTRAINT FK_user_role_role_id FOREIGN KEY(role_id) REFERENCES role(role_id)
