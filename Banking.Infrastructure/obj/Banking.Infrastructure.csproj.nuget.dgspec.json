@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Infrastructure\\Banking.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Domain\\Banking.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Domain\\Banking.Domain.csproj",
+        "projectName": "Banking.Domain",
+        "projectPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Domain\\Banking.Domain.csproj",
+        "packagesPath": "C:\\Users\\MIA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Common\\Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Infrastructure\\Banking.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Infrastructure\\Banking.Infrastructure.csproj",
+        "projectName": "Banking.Infrastructure",
+        "projectPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Infrastructure\\Banking.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\MIA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Domain\\Banking.Domain.csproj": {
+                "projectPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Domain\\Banking.Domain.csproj"
+              },
+              "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Common\\Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Common\\Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\MIA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

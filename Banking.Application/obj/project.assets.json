@@ -1,0 +1,123 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Banking.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Banking.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Banking.Domain.dll": {}
+        }
+      },
+      "Banking.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Banking.Domain": "1.0.0",
+          "Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Banking.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Banking.Infrastructure.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Banking.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Banking.Domain/Banking.Domain.csproj",
+      "msbuildProject": "../Banking.Domain/Banking.Domain.csproj"
+    },
+    "Banking.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Banking.Infrastructure/Banking.Infrastructure.csproj",
+      "msbuildProject": "../Banking.Infrastructure/Banking.Infrastructure.csproj"
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v2.2": [
+      "Banking.Domain >= 1.0.0",
+      "Banking.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\MIA\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Application\\Banking.Application.csproj",
+      "projectName": "Banking.Application",
+      "projectPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Application\\Banking.Application.csproj",
+      "packagesPath": "C:\\Users\\MIA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\MIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp2.2"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "projectReferences": {
+            "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Domain\\Banking.Domain.csproj": {
+              "projectPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Domain\\Banking.Domain.csproj"
+            },
+            "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Infrastructure\\Banking.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Infrastructure\\Banking.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp2.2": {
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}
