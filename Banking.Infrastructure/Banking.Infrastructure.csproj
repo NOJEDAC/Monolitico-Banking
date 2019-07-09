@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Migrations\MySQL\0_CreateAgentTable.sql" />
     <None Remove="Migrations\MySQL\10_CreateGroupRoleTable.sql" />
     <None Remove="Migrations\MySQL\11_CreateUserGroupTable.sql" />
     <None Remove="Migrations\MySQL\12_InsertCustomers.sql" />
@@ -30,6 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\MySQL\0_CreateAgentTable.sql" />
     <EmbeddedResource Include="Migrations\MySQL\22_InsertCustomerUsers.sql" />
     <EmbeddedResource Include="Migrations\MySQL\21_InsertUserRoles.sql" />
     <EmbeddedResource Include="Migrations\MySQL\20_InsertUserGroups.sql" />

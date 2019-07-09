@@ -7,7 +7,7 @@ namespace Banking.Infrastructure.Migrations.MySQL
     {
         public override void Up()
         {
-            Execute.EmbeddedScript("22_InsertCustomerUsers.sql");
+            //Execute.EmbeddedScript("22_InsertCustomerUsers.sql");
         }
 
         public override void Down()
