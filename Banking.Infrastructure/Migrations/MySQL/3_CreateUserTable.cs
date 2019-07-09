@@ -2,7 +2,7 @@
 
 namespace Banking.Infrastructure.Migrations.MySQL
 {
-    [Migration(3)]
+    [Migration(40)]
     public class CreateUserTable : Migration
     {
         public override void Up()

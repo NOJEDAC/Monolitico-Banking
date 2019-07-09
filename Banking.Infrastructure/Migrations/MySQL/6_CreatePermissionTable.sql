@@ -5,5 +5,6 @@
   created_at_utc DATETIME NOT NULL,
   updated_at_utc DATETIME NOT NULL,
   PRIMARY KEY(permission_id),
-  UNIQUE INDEX UQ_permission_name(permission_name)
+  UNIQUE INDEX UQ_permission_name(permission_name),
+  CONSTRAINT FK_permission_permission_id FOREIGN KEY(permission_id) REFERENCES role_permission(permission_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
