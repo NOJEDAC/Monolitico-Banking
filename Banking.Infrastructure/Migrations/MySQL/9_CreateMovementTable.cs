@@ -3,7 +3,7 @@
 namespace Banking.Infrastructure.Migrations.MySQL
 {
     [Migration(90)]
-    public class reateMovementTable : Migration
+    public class CreateMovementTable : Migration
     {
         public override void Up()
         {

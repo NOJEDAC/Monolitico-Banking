@@ -7,14 +7,14 @@ namespace Banking.API.Controllers
 {
     [Produces("application/json")]
     [Consumes("application/json")]
-    [Route("v1/transfers")]
+    [Route("transactions")]
     [ApiController]
     [Authorize]
-    public class TransfersController : ControllerBase
+    public class TransactionController : ControllerBase
     {
         private readonly ITransactionApplicationService _transactionApplicationService;
 
-        public TransfersController(ITransactionApplicationService transactionApplicationService)
+        public TransactionController(ITransactionApplicationService transactionApplicationService)
         {
             _transactionApplicationService = transactionApplicationService;
         }

@@ -28,31 +28,14 @@ namespace Banking.Application.Auth.Queries
                         p.permission_id AS permissionId,
                         p.permission_name AS permissionName
                     FROM 
-                        user u
-                        LEFT JOIN customer_user cu ON u.user_id = cu.user_id
-                        LEFT JOIN customer c ON c.customer_id = cu.customer_id
-                        LEFT JOIN user_group ug ON u.user_id = ug.user_id
-                        LEFT JOIN `group` g ON g.group_id = ug.group_id
-                        LEFT JOIN group_role gr ON g.group_id = gr.group_id
-                        LEFT JOIN role r ON r.role_id = gr.role_id
-                        LEFT JOIN user_role ur ON u.user_id = ur.user_id AND r.role_id = ur.role_id
-                        LEFT JOIN role_permission rp ON r.role_id = rp.role_id
-                        LEFT JOIN permission p ON p.permission_id = rp.permission_id
+                        user u     
+                        INNER JOIN role r ON r.role_id = u.role_id   
+                        INNER JOIN role_permission rp ON r.role_id = rp.role_id
+                        INNER JOIN permission p ON p.permission_id = rp.permission_id
+                        INNER JOIN customer c ON c.user_id = u.user_id
                     WHERE
-                        u.user_id = @UserId
-                    GROUP BY
-                        u.user_id,
-                        u.user_name,
-                        u.email_address,
-                        u.first_name,
-                        u.last_name,
-                        c.customer_id,
-                        c.first_name,
-                        c.last_name,
-                        r.role_id,
-                        r.role_name,
-                        p.permission_id,
-                        p.permission_name
+                        u.user_id = @UserId                       
+                   
                     ORDER BY 
                         c.customer_id, r.role_id, p.permission_id;";
             string connectionString = Environment.GetEnvironmentVariable("MYSQL_BANKING_CORE");
