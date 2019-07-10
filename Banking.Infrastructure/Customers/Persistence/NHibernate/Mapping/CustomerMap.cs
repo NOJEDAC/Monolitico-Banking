@@ -8,6 +8,7 @@ namespace Banking.Infrastructure.Customers.Persistence.NHibernate.Mapping
         public CustomerMap()
         {
             Id(x => x.Id).Column("customer_id");
+            Map(x => x.User).Column("user_id");
             Map(x => x.FirstName).Column("first_name");
             Map(x => x.LastName).Column("last_name");
             Map(x => x.IdentityDocument).Column("identity_document");

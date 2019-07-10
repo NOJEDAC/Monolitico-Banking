@@ -5,11 +5,18 @@ using System;
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 using System.Linq;
+using Banking.Application.Customers.Dtos;
+using Microsoft.AspNetCore.Http;
+using Common;
+using Banking.Application.Customers.Constants;
+using Banking.Domain.Customers.Entities;
+using Banking.Application.Customers.Assemblers;
 
 namespace Banking.Application.Customers.Queries
 {
+
     public class CustomerMySQLDapperQueries : ICustomerQueries
-    {
+    { 
         public List<CustomerDto> GetListPaginated(int page = 0, int pageSize = 5)
         {
             string sql = @"
@@ -39,7 +46,9 @@ namespace Banking.Application.Customers.Queries
                         })
                         .ToList();
                     return customers;
-                } catch(Exception ex) {
+                }
+                catch (Exception ex)
+                {
                     ex.ToString();
                     return new List<CustomerDto>();
                 }
@@ -52,5 +61,8 @@ namespace Banking.Application.Customers.Queries
                 }
             }
         }
+
+       
+
     }
 }

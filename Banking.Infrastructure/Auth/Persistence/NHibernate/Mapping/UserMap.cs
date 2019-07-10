@@ -8,6 +8,7 @@ namespace Banking.Infrastructure.Accounts.Persistence.NHibernate.Mapping
         public UserMap()
         {
             Id(x => x.Id).Column("user_id");
+            Map(x => x.Role).Column("role_id");
             Map(x => x.FirstName).Column("first_name");
             Map(x => x.LastName).Column("last_name");
             Map(x => x.Gender).Column("gender");

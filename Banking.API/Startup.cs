@@ -32,6 +32,8 @@ using Microsoft.IdentityModel.Tokens;
 using Common;
 using System;
 using System.Text;
+using Banking.Application.Customers.Assemblers;
+using Banking.Application.Customers.Services;
 
 namespace Banking.API
 {
@@ -55,12 +57,14 @@ namespace Banking.API
                 var mapper = serviceProvider.GetService<IMapper>();
                 services.AddSingleton(new NewAccountAssembler(mapper));
                 services.AddSingleton(new NewUserAssembler(mapper));
+                services.AddSingleton(new NewCustomerAssembler(mapper));
                 services.AddSingleton(new Hasher());
                 services.AddSingleton(new JwtProvider());
                 services.AddScoped<IUnitOfWork, UnitOfWorkNHibernate>();
                 services.AddScoped<ITransferDomainService, TransferDomainService>();
                 services.AddScoped<ITransactionApplicationService, TransactionApplicationService>();
                 services.AddScoped<IAccountApplicationService, AccountApplicationService>();
+                services.AddScoped<ICustomerApplicationService, CustomerApplicationService>();
                 services.AddScoped<IUserApplicationService, UserApplicationService>();
                 services.AddScoped<IAuthApplicationService, AuthApplicationService>();
                 services.AddTransient<IAccountRepository, AccountNHibernateRepository>((ctx) =>

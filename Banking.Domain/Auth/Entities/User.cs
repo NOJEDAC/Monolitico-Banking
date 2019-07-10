@@ -4,6 +4,7 @@ namespace Banking.Domain.Auth.Entities
 {
     public class User : Entity
     {
+        public virtual int Role { get; set; }
         public virtual string FirstName { get; set; }
         public virtual string LastName { get; set; }
         public virtual string Gender { get; set; }

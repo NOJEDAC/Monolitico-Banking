@@ -7,6 +7,7 @@ namespace Banking.Domain.Customers.Entities
 {
     public class Customer : Entity
     {
+        public virtual long User { get; set; }
         public virtual string FirstName { get; set; }
         public virtual string LastName { get; set; }
         public virtual string IdentityDocument { get; set; }

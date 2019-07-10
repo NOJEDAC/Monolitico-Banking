@@ -6,9 +6,6 @@
 
   <ItemGroup>
     <Folder Include="Accounts\Validations\" />
-    <Folder Include="Customers\Assemblers\" />
-    <Folder Include="Customers\Dtos\" />
-    <Folder Include="Customers\Services\" />
     <Folder Include="Customers\Validations\" />
     <Folder Include="Transactions\Assemblers\" />
     <Folder Include="Transactions\Validations\" />

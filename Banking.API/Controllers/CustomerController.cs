@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Common;
 using System;
 using System.Collections.Generic;
+using Banking.Application.Customers.Dtos;
 
 namespace Banking.API.Controllers
 {
@@ -16,10 +17,11 @@ namespace Banking.API.Controllers
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerQueries _customerQueries;
-
-        public CustomerController(ICustomerQueries customerQueries)
+        private readonly ICustomerApplicationService _customerApplicationService;
+        public CustomerController(ICustomerQueries customerQueries, ICustomerApplicationService customerApplicationService)
         {
             _customerQueries = customerQueries;
+            _customerApplicationService = customerApplicationService;
         }
 
         [HttpGet]
@@ -37,5 +39,13 @@ namespace Banking.API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new ApiStringResponse(ApiConstants.InternalServerError));
             }
         }
+
+        //[HttpPost]
+        //public IActionResult Register([FromBody] NewCustomerDto newCustomerDto)
+        //{
+        //    NewCustomerResponseDto response = _customerApplicationService.Register(newCustomerDto);
+        //    return StatusCode(response.HttpStatusCode, response.Response);
+        //}
+         
     }
 }
