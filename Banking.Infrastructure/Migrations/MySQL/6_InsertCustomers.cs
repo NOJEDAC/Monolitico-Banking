@@ -2,12 +2,12 @@
 
 namespace Banking.Infrastructure.Migrations.MySQL
 {
-    [Migration(12)]
+    [Migration(61)]
     public class InsertCustomers : Migration
     {
         public override void Up()
         {
-            Execute.EmbeddedScript("12_InsertCustomers.sql");
+            //Execute.EmbeddedScript("6_InsertCustomers.sql");
         }
 
         public override void Down()
