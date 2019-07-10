@@ -1,0 +1,16 @@
+
+.vs/BankingMonolithic/v16/Server/sqlite3/db.lock
+.vs/BankingMonolithic/v16/Server/sqlite3/storage.ide
+.vs/BankingMonolithic/v16/Server/sqlite3/storage.ide-shm
+.vs/BankingMonolithic/v16/Server/sqlite3/storage.ide-wal
+Banking.API/obj/Debug/netcoreapp2.2/Banking.API.csproj.CoreCompileInputs.cache
+Banking.API/obj/Debug/netcoreapp2.2/Banking.API.csprojAssemblyReference.cache
+Banking.Application/obj/Debug/netcoreapp2.2/Banking.Application.csproj.CoreCompileInputs.cache
+Banking.Application/obj/Debug/netcoreapp2.2/Banking.Application.csprojAssemblyReference.cache
+Banking.Domain/obj/Debug/netcoreapp2.2/Banking.Domain.csproj.CoreCompileInputs.cache
+Banking.Domain/obj/Debug/netcoreapp2.2/Banking.Domain.csprojAssemblyReference.cache
+Banking.Infrastructure/obj/Debug/netcoreapp2.2/Banking.Infrastructure.csproj.CoreCompileInputs.cache
+Banking.Infrastructure/obj/Debug/netcoreapp2.2/Banking.Infrastructure.csprojAssemblyReference.cache
+Banking.Test/obj/Debug/netcoreapp2.2/Banking.Test.csproj.CoreCompileInputs.cache
+Banking.Test/obj/Debug/netcoreapp2.2/Banking.Test.csprojAssemblyReference.cache
+Common/obj/Debug/netcoreapp2.2/Common.csproj.CoreCompileInputs.cache
