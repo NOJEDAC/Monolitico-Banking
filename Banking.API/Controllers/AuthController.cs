@@ -6,7 +6,7 @@ namespace Banking.API.Controllers
 {
     [Produces("application/json")]
     [Consumes("application/json")]
-    [Route("v1/auth")]
+    [Route("")]
     [ApiController]
     public class AuthController : ControllerBase
     {

@@ -57,7 +57,24 @@ namespace Banking.Application.Auth.Services
                         Response = new ApiStringResponse(ApiConstants.InvalidLogin)
                     };
                 }
-                LoginViewModel loginViewModel = _authQueries.GetLoginInfo(user.Id);
+                LoginViewModel loginViewModel;
+                if (loginDto.Type == "1")
+                {
+                    loginViewModel = _authQueries.GetLoginInfoAdm(user.Id);
+                }
+                else
+                {
+                    loginViewModel = _authQueries.GetLoginInfo(user.Id);
+                }
+
+                if(loginViewModel.UserId == 0)
+                {
+                    return new LoginResponseDto
+                    {
+                        HttpStatusCode = StatusCodes.Status204NoContent,
+                        Response = new ApiStringResponse(ApiConstants.InvalidLogin)
+                    };
+                }
                 string token = _jwtProvider.BuildJwtToken(loginViewModel);
                 loginViewModel.Token = token;
 

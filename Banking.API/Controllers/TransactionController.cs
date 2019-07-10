@@ -19,11 +19,19 @@ namespace Banking.API.Controllers
             _transactionApplicationService = transactionApplicationService;
         }
 
-        [HttpPost]
+        [HttpPost("transfer")]
         public IActionResult PerformTransfer([FromBody] NewTransferDto newTransferDto)
         {
             NewTransferResponseDto response = _transactionApplicationService.PerformTransfer(newTransferDto);
             return StatusCode(response.HttpStatusCode, response.StringResponse);
         }
+
+        [HttpPost("transaction")]
+        public IActionResult PerformDeposit([FromBody] NewDepositDto newDepositDto)
+        {
+            NewTransferResponseDto response = _transactionApplicationService.PerformDeposit(newDepositDto);
+            return StatusCode(response.HttpStatusCode, response.StringResponse);
+        }
+
     }
 }

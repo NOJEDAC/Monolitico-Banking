@@ -14312,26 +14312,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Xavier Miranda\\.nuget\\packages\\": {},
+    "C:\\Users\\MIA\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Xavier Miranda\\Desktop\\BANKING_ADS\\endopoint_banking_grupo04\\Banking.API\\Banking.API.csproj",
+      "projectUniqueName": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.API\\Banking.API.csproj",
       "projectName": "Banking.API",
-      "projectPath": "C:\\Users\\Xavier Miranda\\Desktop\\BANKING_ADS\\endopoint_banking_grupo04\\Banking.API\\Banking.API.csproj",
-      "packagesPath": "C:\\Users\\Xavier Miranda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Xavier Miranda\\Desktop\\BANKING_ADS\\endopoint_banking_grupo04\\Banking.API\\obj\\",
+      "projectPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.API\\Banking.API.csproj",
+      "packagesPath": "C:\\Users\\MIA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Xavier Miranda\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+        "C:\\Users\\MIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -14339,18 +14338,17 @@
         "netcoreapp2.2"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Xavier Miranda\\Desktop\\BANKING_ADS\\endopoint_banking_grupo04\\Banking.Application\\Banking.Application.csproj": {
-              "projectPath": "C:\\Users\\Xavier Miranda\\Desktop\\BANKING_ADS\\endopoint_banking_grupo04\\Banking.Application\\Banking.Application.csproj"
+            "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Application\\Banking.Application.csproj": {
+              "projectPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Application\\Banking.Application.csproj"
             },
-            "C:\\Users\\Xavier Miranda\\Desktop\\BANKING_ADS\\endopoint_banking_grupo04\\Banking.Infrastructure\\Banking.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Xavier Miranda\\Desktop\\BANKING_ADS\\endopoint_banking_grupo04\\Banking.Infrastructure\\Banking.Infrastructure.csproj"
+            "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Infrastructure\\Banking.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\MIA\\Documents\\GitHub\\endopoint_banking_grupo04\\Banking.Infrastructure\\Banking.Infrastructure.csproj"
             }
           }
         }

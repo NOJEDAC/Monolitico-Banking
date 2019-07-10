@@ -9,6 +9,8 @@ using Banking.Application.Auth.Queries;
 using Banking.Application.Auth.Services;
 using Banking.Application.Customers.Contracts;
 using Banking.Application.Customers.Queries;
+using Banking.Application.Movements.Contracts;
+using Banking.Application.Movements.Queries;
 using Banking.Application.Transactions.Contracts;
 using Banking.Application.Transactions.Services;
 using Banking.Application.Users.Assemblers;
@@ -17,11 +19,13 @@ using Banking.Application.Users.Services;
 using Banking.Domain.Accounts.Contracts;
 using Banking.Domain.Auth.Contracts;
 using Banking.Domain.Customers.Contracts;
+using Banking.Domain.Movements.Contracts;
 using Banking.Domain.Transactions.Contracts;
 using Banking.Domain.Transactions.Services;
 using Banking.Infrastructure.Accounts.Persistence.NHibernate.Repository;
 using Banking.Infrastructure.Auth.Hashing;
 using Banking.Infrastructure.Customers.Persistence.NHibernate.Repository;
+using Banking.Infrastructure.Movements.Persistence.NHibernate.Repository;
 using Banking.Infrastructure.NHibernate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -73,6 +77,11 @@ namespace Banking.API
                     IUnitOfWork unitOfWork = ctx.GetService<IUnitOfWork>();
                     return new CustomerNHibernateRepository((UnitOfWorkNHibernate)unitOfWork);
                 });
+                services.AddTransient<IMovementRepository, MovementNHibernateRepository>((ctx) =>
+                {
+                    IUnitOfWork unitOfWork = ctx.GetService<IUnitOfWork>();
+                    return new MovementNHibernateRepository((UnitOfWorkNHibernate)unitOfWork);
+                });
                 services.AddTransient<IUserRepository, UserNHibernateRepository>((ctx) =>
                 {
                     IUnitOfWork unitOfWork = ctx.GetService<IUnitOfWork>();
@@ -80,6 +89,7 @@ namespace Banking.API
                 });
                 services.AddSingleton<IAccountQueries, AccountMySQLDapperQueries>();
                 services.AddSingleton<ICustomerQueries, CustomerMySQLDapperQueries>();
+                services.AddSingleton<IMovementQueries, MovementMySQLDapperQueries>();
                 services.AddSingleton<IAuthQueries, AuthMySQLDapperQueries>();
 
                 services.AddAuthentication(options =>

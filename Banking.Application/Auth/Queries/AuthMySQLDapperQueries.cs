@@ -66,6 +66,61 @@ namespace Banking.Application.Auth.Queries
                 }
             }
         }
+        public LoginViewModel GetLoginInfoAdm(long userId)
+        {
+            string sql = @"
+                    SELECT
+                        u.user_id AS userId,
+                        u.user_name AS userName,
+                        u.email_address AS emailAddress,
+                        u.first_name AS userFirstName,
+                        u.last_name AS userLastName,
+                        c.agent_id  AS customerId,
+                        c.first_name AS customerFirstName,
+                        c.last_name AS customerLastName,
+                        r.role_id AS roleId,
+                        r.role_name AS roleName,
+                        p.permission_id AS permissionId,
+                        p.permission_name AS permissionName
+                    FROM 
+                        user u     
+                        INNER JOIN role r ON r.role_id = u.role_id   
+                        INNER JOIN role_permission rp ON r.role_id = rp.role_id
+                        INNER JOIN permission p ON p.permission_id = rp.permission_id
+                        INNER JOIN agent c ON c.user_id = u.user_id
+                    WHERE
+                        u.user_id = @UserId
+                   
+                    ORDER BY 
+                        c.agent_id, r.role_id, p.permission_id;";
+            string connectionString = Environment.GetEnvironmentVariable("MYSQL_BANKING_CORE");
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    List<LoginQueryViewModel> result = connection
+                        .Query<LoginQueryViewModel>(sql, new
+                        {
+                            UserId = userId
+                        })
+                        .ToList();
+                    return MapLoginInfo(result);
+                }
+                catch (Exception ex)
+                {
+                    ex.ToString();
+                    throw ex;
+                }
+                finally
+                {
+                    if (connection.State != System.Data.ConnectionState.Closed)
+                    {
+                        connection.Close();
+                    }
+                }
+            }
+        }
 
         private LoginViewModel MapLoginInfo(List<LoginQueryViewModel> result)
         {
