@@ -2,12 +2,12 @@
 
 namespace Banking.Infrastructure.Migrations.MySQL
 {
-    [Migration(17)]
-    public class InsertPermissions : Migration
+    [Migration(80)]
+    public class CreateMovementTypeTable : Migration
     {
         public override void Up()
         {
-            Execute.EmbeddedScript("17_InsertPermissions.sql");
+            Execute.EmbeddedScript("8_CreateMovementTypeTable.sql");
         }
 
         public override void Down()
