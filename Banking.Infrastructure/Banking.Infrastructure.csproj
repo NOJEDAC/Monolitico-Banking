@@ -5,55 +5,39 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Migrations\MySQL\0_CreateAgentTable.sql" />
-    <None Remove="Migrations\MySQL\10_CreateGroupRoleTable.sql" />
-    <None Remove="Migrations\MySQL\11_CreateUserGroupTable.sql" />
-    <None Remove="Migrations\MySQL\12_InsertCustomers.sql" />
-    <None Remove="Migrations\MySQL\13_InsertAccounts.sql" />
-    <None Remove="Migrations\MySQL\14_InsertGroups.sql" />
-    <None Remove="Migrations\MySQL\15_InsertRoles.sql" />
-    <None Remove="Migrations\MySQL\16_InsertGroupRoles.sql" />
-    <None Remove="Migrations\MySQL\17_InsertPermissions.sql" />
-    <None Remove="Migrations\MySQL\18_InsertRolePermissions.sql" />
-    <None Remove="Migrations\MySQL\19_InsertUsers.sql" />
-    <None Remove="Migrations\MySQL\1_CreateCustomerTable.sql" />
-    <None Remove="Migrations\MySQL\20_InsertUserGroups.sql" />
-    <None Remove="Migrations\MySQL\21_InsertUserRoles.sql" />
-    <None Remove="Migrations\MySQL\22_InsertCustomerUsers.sql" />
-    <None Remove="Migrations\MySQL\2_CreateAccountTable.sql" />
-    <None Remove="Migrations\MySQL\3_CreateUserTable.sql" />
-    <None Remove="Migrations\MySQL\4_CreateCustomerUserTable.sql" />
-    <None Remove="Migrations\MySQL\5_CreateRoleTable.sql" />
-    <None Remove="Migrations\MySQL\6_CreatePermissionTable.sql" />
-    <None Remove="Migrations\MySQL\7_CreateGroupTable.sql" />
-    <None Remove="Migrations\MySQL\8_CreateRolePermissionTable.sql" />
-    <None Remove="Migrations\MySQL\9_CreateUserRoleTable.sql" />
+    <None Remove="Migrations\MySQL\1_CreatePermissionTable.sql" />
+    <None Remove="Migrations\MySQL\1_InsertPermissions.sql" />
+    <None Remove="Migrations\MySQL\2_CreateRoleTable.sql" />
+    <None Remove="Migrations\MySQL\2_InsertRoles.sql" />
+    <None Remove="Migrations\MySQL\3_CreateRolePermissionTable.sql" />
+    <None Remove="Migrations\MySQL\3_InsertRolePermissions.sql" />
+    <None Remove="Migrations\MySQL\4_CreateUserTable.sql" />
+    <None Remove="Migrations\MySQL\4_InsertUsers.sql" />
+    <None Remove="Migrations\MySQL\5_CreateAgentTable.sql" />
+    <None Remove="Migrations\MySQL\6_CreateCustomerTable.sql" />
+    <None Remove="Migrations\MySQL\6_InsertCustomers.sql" />
+    <None Remove="Migrations\MySQL\7_CreateAccountTable.sql" />
+    <None Remove="Migrations\MySQL\7_InsertAccounts.sql" />
+    <None Remove="Migrations\MySQL\8_CreateMovementTypeTable.sql" />
+    <None Remove="Migrations\MySQL\9_CreateMovementTable.sql" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\MySQL\0_CreateAgentTable.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\22_InsertCustomerUsers.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\21_InsertUserRoles.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\20_InsertUserGroups.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\19_InsertUsers.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\18_InsertRolePermissions.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\17_InsertPermissions.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\16_InsertGroupRoles.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\15_InsertRoles.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\14_InsertGroups.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\13_InsertAccounts.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\12_InsertCustomers.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\11_CreateUserGroupTable.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\1_CreateCustomerTable.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\2_CreateAccountTable.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\4_CreateCustomerUserTable.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\3_CreateUserTable.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\5_CreateRoleTable.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\6_CreatePermissionTable.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\7_CreateGroupTable.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\8_CreateRolePermissionTable.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\9_CreateUserRoleTable.sql" />
-    <EmbeddedResource Include="Migrations\MySQL\10_CreateGroupRoleTable.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\8_CreateMovementTypeTable.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\9_CreateMovementTable.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\5_CreateAgentTable.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\4_InsertUsers.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\3_InsertRolePermissions.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\1_InsertPermissions.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\2_InsertRoles.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\7_InsertAccounts.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\6_InsertCustomers.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\6_CreateCustomerTable.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\7_CreateAccountTable.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\4_CreateUserTable.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\2_CreateRoleTable.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\1_CreatePermissionTable.sql" />
+    <EmbeddedResource Include="Migrations\MySQL\3_CreateRolePermissionTable.sql" />
   </ItemGroup>
 
   <ItemGroup>
