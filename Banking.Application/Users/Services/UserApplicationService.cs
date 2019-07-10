@@ -54,7 +54,7 @@ namespace Banking.Application.Users.Services
                 customer.IdentityDocument = newUserDto.Document;
                 customer.User = user.Id;
                 customer.Active = true;
-                
+                 
                 _newCustomerRepository.SaveOrUpdate(customer);
 
                 return new NewUserResponseDto
